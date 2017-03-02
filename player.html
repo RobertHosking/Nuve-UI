@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	
+	  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/Chart.js"></script>
+
+
+	<meta charset="utf-8">
+	<title>Pi Drive</title>
+</head>
+<body>
+<div class="container">
+  <div class="player-container center-block">
+    <video
+      id="video"
+      class="video-js vjs-16-9"
+      height="300"
+      width="600"
+      controls
+       data-setup='{
+        "autoplay": true}'>
+    </video>
+
+    <div class="vjs-playlist">
+      <!--
+        The contents of this element will be filled based on the
+        currently loaded playlist
+      -->
+    </div>
+  </div>
+</div>
+  <link rel="stylesheet" href="https://unpkg.com/video.js/dist/video-js.css">
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/videojs-playlist/dist/videojs-playlist.js"></script>
+  <script src="https://unpkg.com/videojs-playlist-ui/dist/videojs-playlist-ui.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .info {
+      background-color: #eee;
+      border: thin solid #333;
+      border-radius: 3px;
+      margin: 0 0 20px;
+      padding: 0 5px;
+    }
+    /*
+      We include some minimal custom CSS to make the playlist UI look good
+      in this context.
+    */
+    .player-container {
+      background: #1a1a1a;
+      overflow: auto;
+      width: 934px;
+    }
+    .video-js {
+      float: left;
+    }
+    .vjs-playlist {
+      float: left;
+      width: 300px;
+    }
+    
+    
+  </style>
+    
+  <script>
+    var player = videojs('video');
+    var playlist_hash = [{name: 'Mr. Nobody (2014).mp4',description: 'test',duration: 0,thumbnail: [{srcset: '',type: 'image/jpeg',media: '(min-width: 400px;)'},{src: ''}],sources: [{ src: '//vjs.zencdn.net/v/oceans.mp4?1', type: 'video/mp4' }]},{name: 'The Avengers (2012).mp4',description: 'test',duration: 0,thumbnail: [{srcset: '',type: 'image/jpeg',media: '(min-width: 400px;)'},{src: ''}],sources: [{ src: '//vjs.zencdn.net/v/oceans.mp4?2', type: 'video/mp4' }]},{name: 'The Force Awakens (2016).mp4',description: 'test',duration: 0,thumbnail: [{srcset: '',type: 'image/jpeg',media: '(min-width: 400px;)'},{src: ''}],sources: [{ src: '//vjs.zencdn.net/v/oceans.mp4?3', type: 'video/mp4' }]},{name: 'The Matrix (1997).mp4',description: 'test',duration: 0,thumbnail: [{srcset: '',type: 'image/jpeg',media: '(min-width: 400px;)'},{src: ''}],sources: [{ src: '//vjs.zencdn.net/v/oceans.mp4?4', type: 'video/mp4' }]}];
+    player.playlistUi();
+    player.playlist(playlist_hash);
+    // Initialize the playlist-ui plugin with no option (i.e. the defaults).
+     player.playlist.autoadvance(2);
+  </script>
+  </body>
+  </html>
