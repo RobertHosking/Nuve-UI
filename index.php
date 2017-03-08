@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-addons.css" type="text/css" />
+    <link rel="stylesheet" href="css/mdb.min.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/Chart.js"></script>
-    <meta charset="utf-8">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
     <title>Pi Drive</title>
   </head>
   <body data-spy="scroll" data-offset="0" data-target="#nav">
@@ -19,7 +17,43 @@
       <div id="topbar-inner">
         <div class="container">
           <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
+            <div class="col-sm-4">
+ 
+ 
+ <ul class="nav nav-tabs">
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+      All <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li class="active"><a href="#dropdown1" data-toggle="tab" aria-expanded="true">All</a></li>
+      <li class="divider"></li>
+      <li><a href="#dropdown2" data-toggle="tab">Action</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Adventure</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Drama</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Horror</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Romance</a></li>
+
+    </ul>
+  </li>
+  
+  
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+      Recently Added <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li class="active"><a href="#dropdown1" data-toggle="tab" aria-expanded="true">Recently Added</a></li>
+      <li class="divider"></li>
+      <li><a href="#dropdown2" data-toggle="tab">Newest First</a></li>
+      <li><a href="#dropdown2" data-toggle="tab">Oldest First</a></li>
+    </ul>
+  </li>
+</ul>
+ 
+ 
+            </div>
+            <div class="col-sm-4">
               <div class="dropdown">
                 <ul id="nav" class="nav">
                   <li class="menu-item"><a href="" data-placement="bottom"data-toggle="tooltip" title="Movies"><i class="fa fa-film"></i></a></li>
@@ -31,12 +65,7 @@
             </div>
             <div class="col-sm-3">
               <form>
-                <div class="group">      
-                  <input type="text" required>
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Search</label>
-                </div>
+                  <input type="text" class="form-control search" placeholder="Search" />
               </form>
             </div>
             <div class="col-sm-1">
