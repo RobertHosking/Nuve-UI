@@ -105,7 +105,7 @@
                     <div class="overlay">
                    
                         <p class="icon-links">
-                            <a href="#" class="heart">
+                            <a href="/movie-preview.html" class="heart">
                                 <span class="fa fa-heart-o"></span>
                             </a>
                         </p>
