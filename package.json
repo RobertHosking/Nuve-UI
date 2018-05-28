@@ -1,13 +1,8 @@
 {
   "name": "nuve-ui",
   "version": "1.0.0",
-  "description": "User interface for Nuve Media Server",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-jshint": "^2.1.0",
-    "gulp-postcss": "^7.0.1"
-  },
-  "devDependencies": {},
+  "description": "# Getting Started",
+  "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/RobertHosking/Nuve-UI/issues"
   },
-  "homepage": "https://github.com/RobertHosking/Nuve-UI#readme"
+  "homepage": "https://github.com/RobertHosking/Nuve-UI#readme",
+  "dependencies": {
+    "autoprefixer": "^8.5.1",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.5"
+  }
 }
